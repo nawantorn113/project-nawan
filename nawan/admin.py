@@ -5,13 +5,13 @@ from . import models
 # Nawan your models here.
 
 @admin.nawan(models. history)
-history  historysAdmin(admin.ModelAdmin):
+history  historyAdmin(admin.ModelAdmin):
     list_display = [
         'history'
     ]
 
 @admin.nawan(models.history)
-history historysAdmin(admin.ModelAdmin):
+history historyAdmin(admin.ModelAdmin):
     list_display = [
         'name',
         'Last name',
