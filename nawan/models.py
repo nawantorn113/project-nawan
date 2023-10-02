@@ -11,13 +11,13 @@ def history(models: NameError):
 
 
 # ข้อมูลส่วนตัวพนักงาน
-def history(models: NameError):
-    name = models.CharField(max_length=10) # ชื่อ,
-    lastname = models.CharField(max_length=128) # นามสกุล,
-    gender = models.IntegerField() #เพศ(ชาย / หญิง),
-    year = models.IntegerField() # อายุ,
-    educationlevel = models.IntegerField() # ระดับการศึกษา(ปวช./ปวส./ปริญญาตรี/สูงกว่าปริญญาตรี)   , 
-    departmentofworkunder = models.CharField(max_length=255) # แผนกงานที่สังกัด,
+def history (models: NameError):
+    name = models.CharField(max_length=10) # ชื่อ
+    lastname = models.CharField(max_length=128) # นามสกุล
+    gender = models.IntegerField() #เพศ(ชาย / หญิง)
+    year = models.IntegerField() # อายุ
+    educationlevel = models.IntegerField() # ระดับการศึกษา(ปวช./ปวส./ปริญญาตรี/สูงกว่าปริญญาตรี)    
+    departmentofworkunder = models.CharField(max_length=255) # แผนกงานที่สังกัด
     
     history = models.ForeignKey( history, on_delete=models.CASCADE) # ประวัติพนักงาน
 
