@@ -10,6 +10,6 @@ def index(request):
 
 def history(request, id):
     context = {}
-    context['nawans'] = models. history.objects.filter(personal_information=name)
+    context['nawans'] = models. history.objects.filter(personal_information=NameError)
 
     return render(request, ' history.html', context)
