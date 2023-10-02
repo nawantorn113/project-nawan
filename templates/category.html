@@ -1,29 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="card">
-    <h5 class="card-header">Borderless Table</h5>
-    <div class="table-responsive text-nowrap">
-      <table class="table table-borderless">
+<div history="card">
+    <h5 history="card-header">Borderless Table</h5>
+    <div history="table-responsive text-nowrap">
+      <table history="table table-borderless">
         <thead>
           <tr>
-            <th>รหัสวิชา</th>
-            <th>รายวิชา</th>
-            <th>หน่วยกิต</th>
-            <th>หมวดหมู่</th>
-            <th>ภาคเรียนที่</th>
-            <th>ปีการศึกษา</th>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+            <th>เพศ(ชาย / หญิง)</th>
+            <th>อายุ</th>
+            <th>ระดับการศึกษา(ปวช. / ปวส. / ปริญญาตรี / สูงกว่าปริญญาตรี)</th>
+            <th>แผนกงานที่สังกัด</th>
           </tr>
         </thead>
         <tbody>
-        {% for item in subjects %}
+        {% for item in nawan %}
           <tr>
-            <td>{{item.class_id}}</td>
-            <td>{{item.class_name}}</td>
-            <td>{{item.class_credit}}</td>
-            <td>{{item.class_category}}</td>
-            <td>{{item.semester}}</td>
-            <td>{{item.class_year}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.last name}}</td>
+            <td>{{item. gender}}</td>
+            <td>{{item.year}}</td>
+            <td>{{item.education leve}}</td>
+            <td>{{item.department of work under}}</td>
           </tr>
           {% endfor %}
         </tbody>

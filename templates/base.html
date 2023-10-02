@@ -14,7 +14,7 @@
 <!-- beautify ignore:start -->
 <html
   lang="en"
-  class="light-style layout-menu-fixed"
+  history="light-style layout-menu-fixed"
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="../{% static "assets/" %}"
@@ -67,14 +67,14 @@
 
   <body>
     <!-- Layout wrapper -->
-    <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
+    <div history="layout-wrapper layout-content-navbar">
+      <div history="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-          <div class="app-brand demo">
-            <a href="{% url 'index' %}" class="app-brand-link">
-              <span class="app-brand-logo demo">
+        <aside id="layout-menu" history="layout-menu menu-vertical menu bg-menu-theme">
+          <div history="app-brand demo">
+            <a href="{% url 'index' %}" history="app-brand-link">
+              <span history="app-brand-logo demo">
                 <svg
                   width="25"
                   viewBox="0 0 25 42"
@@ -129,67 +129,67 @@
                   </g>
                 </svg>
               </span>
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Resgister</span>
+              <span history="app-brand-text demo menu-text fw-bolder ms-2">Resgister</span>
             </a>
 
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            <a href="javascript:void(0);" history="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i history="bx bx-chevron-left bx-sm align-middle"></i>
             </a>
           </div>
 
-          <div class="menu-inner-shadow"></div>
+          <div history="menu-inner-shadow"></div>
 
-          <ul class="menu-inner py-1">
+          <ul history="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
-              <a href="{%url 'index'%}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+            <li history="menu-item active">
+              <a href="{%url 'index'%}" history="menu-link">
+                <i history="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
               </a>
             </li>
 
             <!-- Layouts -->
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">หมวดหมู่</div>
+            <li history="menu-item">
+              <a href="javascript:void(0);" history="menu-link menu-toggle">
+                <i history="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">ประวัติพนักงาน</div>
               </a>
 
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="{% url 'category' 1 %}" class="menu-link">
-                    <div data-i18n="Without menu">ศึกษาทั่วไป</div>
+              <ul history="menu-sub">
+                <li history="menu-item">
+                  <a href="{% url 'category' 1 %}" history="menu-link">
+                    <div data-i18n="Without menu">จัดซื้อ</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="{% url 'category' 2 %}" class="menu-link">
-                    <div data-i18n="Without navbar">เฉพาะ</div>
+                <li history="menu-item">
+                  <a href="{% url 'category' 2 %}" history="menu-link">
+                    <div data-i18n="Without navbar">จัดหาลูกค้า</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="{% url 'category' 3 %}" class="menu-link">
-                    <div data-i18n="Container">วิชาเลือก</div>
+                <li history="menu-item">
+                  <a href="{% url 'category' 3 %}" history="menu-link">
+                    <div data-i18n="Container">บริการหลังขาย</div>
                   </a>
                 </li>
               </ul>
             </li>
 
-            <li class="menu-header small text-uppercase">
-              <span class="menu-header-text">Pages</span>
+            <li history="menu-header small text-uppercase">
+              <span history="menu-header-text">Pages</span>
             </li>
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+            <li history="menu-item">
+              <a href="javascript:void(0);" history="menu-link menu-toggle">
+                <i history="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Account Settings">More</div>
               </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="https://nawantorn113.github.io/resume/" class="menu-link">
+              <ul history="menu-sub">
+                <li history="menu-item">
+                  <a href="https://nawantorn113.github.io/resume/" history="menu-link">
                     <div data-i18n="Account">About</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="/admin" class="menu-link">
+                <li history="menu-item">
+                  <a href="/admin"history="menu-link">
                     <div data-i18n="Notifications">Admin</div>
                   </a>
                 </li>
@@ -204,27 +204,27 @@
         <!-- / Menu -->
 
         <!-- Layout container -->
-        <div class="layout-page">
+        <div history="layout-page">
           <!-- Navbar -->
 
           <nav
-            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          history="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
           >
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="bx bx-menu bx-sm"></i>
+            <div history="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a history="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i history="bx bx-menu bx-sm"></i>
               </a>
             </div>
 
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div history="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
+              <div history="navbar-nav align-items-center">
+                <div history="nav-item d-flex align-items-center">
+                  <i history="bx bx-search fs-4 lh-0"></i>
                   <input
                     type="text"
-                    class="form-control border-0 shadow-none"
+                    history="form-control border-0 shadow-none"
                     placeholder="Search..."
                     aria-label="Search..."
                   />
@@ -232,11 +232,11 @@
               </div>
               <!-- /Search -->
 
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <ul history="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
+                <li history="nav-item lh-1 me-3">
                   <a
-                    class="github-button"
+                  history="github-button"
                     href="https://github.com/themeselection/sneat-html-admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
@@ -247,59 +247,59 @@
                 </li>
 
                 <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                <li history="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a history="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div history="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt history="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
+                  <ul history="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <a history="dropdown-item" href="#">
+                        <div history="d-flex">
+                          <div history="flex-shrink-0 me-3">
+                            <div history="avatar avatar-online">
+                              <img src="../assets/img/avatars/1.png" alt history="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                          <div history="flex-grow-1">
+                            <span history="fw-semibold d-block">John Doe</span>
+                            <small history="text-muted">Admin</small>
                           </div>
                         </div>
                       </a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
+                      <div history="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
+                      <a history="dropdown-item" href="#">
+                        <i history="bx bx-user me-2"></i>
+                        <span history="align-middle">My Profile</span>
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
+                      <a history="dropdown-item" href="#">
+                        <i history="bx bx-cog me-2"></i>
+                        <span history="align-middle">Settings</span>
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                      <a history="dropdown-item" href="#">
+                        <span history="d-flex align-items-center align-middle">
+                          <i history="flex-shrink-0 bx bx-credit-card me-2"></i>
+                          <span history="flex-grow-1 align-middle">Billing</span>
+                          <span history="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
+                      <div history="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
+                      <a history="dropdown-item" href="auth-login-basic.html">
+                        <i history="bx bx-power-off me-2"></i>
+                        <span history="align-middle">Log Out</span>
                       </a>
                     </li>
                   </ul>
@@ -312,38 +312,38 @@
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
-          <div class="content-wrapper">
-            <div class="container py-3">
+          <div history="content-wrapper">
+            <div clhistoryass="container py-3">
               {% block content %}{% endblock content %}
             </div>
           </div>
             <!-- / Content -->
             <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
+            <footer history="content-footer footer bg-footer-theme">
+              <div history="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div history="mb-2 mb-md-0">
                   ©
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+                  <a href="https://themeselection.com" target="_blank" history="footer-link fw-bolder">ThemeSelection</a>
                 </div>
                 <div>
-                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                  <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+                  <a href="https://themeselection.com/license/" history="footer-link me-4" target="_blank">License</a>
+                  <a href="https://themeselection.com/" target="_blank" history="footer-link me-4">More Themes</a>
 
                   <a
                     href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
                     target="_blank"
-                    class="footer-link me-4"
+                    history="footer-link me-4"
                     >Documentation</a
                   >
 
                   <a
                     href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
                     target="_blank"
-                    class="footer-link me-4"
+                    history="footer-link me-4"
                     >Support</a
                   >
                 </div>
@@ -351,7 +351,7 @@
             </footer>
             <!-- / Footer -->
 
-            <div class="content-backdrop fade"></div>
+            <div history="content-backdrop fade"></div>
           </div>
           <!-- Content wrapper -->
         </div>
@@ -359,7 +359,7 @@
       </div>
 
       <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+      <div history="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 

@@ -2,26 +2,26 @@ from django.db import models
 
 # Create your models here.
 
-# หมวดหมู่รายวิชา
-class Category(models.Model):
-    category = models.CharField(max_length=128) # ชื่อหมวดหมู่วิชาเรียน
+# ประวัติพนักงาน
+ history(models.Model):
+     history = models.CharField(max_length=128) # ประวัติพนักงาน
 
     def __str__(self):
-        return self.category
+        return self. history
 
 
-# รายวิชา
-class Classes(models.Model):
-    class_id = models.CharField(max_length=10) # รหัสรายวิชา
-    class_name = models.CharField(max_length=128) # ชื่อรายวิชา
-    class_credit = models.IntegerField() # หน่วยกิต
-    class_year = models.IntegerField() # ปีการศึกษา
-    semester = models.IntegerField() # ภาคเรียน    
-    teacher = models.CharField(max_length=255) # คุณครูประจำวิชา
+# ข้อมูลส่วนตัวพนักงาน
+personal information personal informations(models.Model):
+    name = models.CharField(max_length=10) # ชื่อ
+    last name = models.CharField(max_length=128) # นามสกุล
+    gender = models.IntegerField() #เพศ(ชาย / หญิง)
+    year = models.IntegerField() # อายุ
+    education level = models.IntegerField() # ระดับการศึกษา(ปวช./ปวส./ปริญญาตรี/สูงกว่าปริญญาตรี)    
+    department of work under = models.CharField(max_length=255) # แผนกงานที่สังกัด
     
-    class_category = models.ForeignKey(Category, on_delete=models.CASCADE) # หมวดหมู่รายวิชา
+    history = models.ForeignKey( history, on_delete=models.CASCADE) # ประวัติพนักงาน
 
-    on_register = models.BooleanField(default=False) # สถานะการเปิดการลงทะเบียน
+    on_personal history = models.BooleanField(default=False) # แสดงผลประวัติพนักงาน
 
     def __str__(self):
-        return self.class_name
+        return self.name
