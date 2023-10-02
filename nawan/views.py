@@ -4,12 +4,12 @@ from . import models
 
 def index(request):
     context = {}
-    context['nawan'] = models. history.objects.all()
+    context['nawans'] = models. history.objects.all()
     return render(request, 'index.html', context)
 
 
-def (request, id):
+def history(request, id):
     context = {}
-    context['nawan'] = models. history.objects.filter(personal information=name)
+    context['nawans'] = models. history.objects.filter(personal_information=name)
 
     return render(request, ' history.html', context)
