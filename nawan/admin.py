@@ -18,4 +18,5 @@ def history (ModelAdmin):
         'gender',
         'year',
         'education level',
-        'department of work under ',]
+        'department of work under ',
+        'on_project nawan']

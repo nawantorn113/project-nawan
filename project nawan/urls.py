@@ -22,5 +22,5 @@ from nawan import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index , name='index'),
-    path('category/<int:id>', views.category , name='category')
+    path('history/<int:id>', views.history , name='history')
 ]
