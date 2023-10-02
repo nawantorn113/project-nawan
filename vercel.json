@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "resgis/wsgi.py",
+            "src": "project nawan/wsgi.py",
             "use": "@vercel/python"
         },
         {
@@ -20,7 +20,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "resgis/wsgi.py"
+            "dest": "project nawan/wsgi.py"
         }
     ]
     
