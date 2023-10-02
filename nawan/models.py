@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 # ประวัติพนักงาน
-history (models.Model):
+def history (models.Model):
     history = models.CharField(max_length=128) # ประวัติพนักงาน
 
     def __str__(self):
@@ -11,7 +11,7 @@ history (models.Model):
 
 
 # ข้อมูลส่วนตัวพนักงาน
-history personal in formations(models.Model):
+def history (models.Model):
     name = models.CharField(max_length=10) # ชื่อ,
     lastname = models.CharField(max_length=128) # นามสกุล,
     gender = models.IntegerField() #เพศ(ชาย / หญิง),
