@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project nawan.urls'
+ROOT_URLCONF = 'projectnawan.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project nawan.wsgi.application'
+WSGI_APPLICATION = 'projectnawan.wsgi.application'
 
 
 # Database
