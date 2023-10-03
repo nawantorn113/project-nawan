@@ -1,22 +1,16 @@
 from django.contrib import admin
-from . import models
+
+# Register your models here.
+from .models import Department, Employee
 
 
-# Nawan your models here.
+@admin.register(Department)
+class DepartmentAdmin(admin.ModelAdmin):
+    list_display = ("name",)
+    search_fields = list_display
 
-@admin.nawan(models. history)
-def history(ModelAdmin):
-   list_display = [
-        'history'
-    ]
 
-@admin.nawan(models.history)
-def history (ModelAdmin):    
- list_display = [
-        'name',
-        'Last name',
-        'gender',
-        'year',
-        'education level',
-        'department of work under ',
-        'on_projectnawan']
+@admin.register(Employee)
+class EmployeeAdmin(admin.ModelAdmin):
+    list_display = ("name", "l_name", "gender", "age", "qualification", "department")
+    search_fields = list_display

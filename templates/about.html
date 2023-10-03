@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+<!---->
+{% block title %}
+    เกี่ยวกับเรา
+{% endblock title %}
+<!---->
+{% block Content %}
+{{message}}
+    <style>
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+        padding: 2px 16px;
+        }
+    </style>
+    <div class="card" >
+    <img src="https://cdn.discordapp.com/attachments/1026853768505081868/1158254566823960586/Elegance_on_Wheels__Rolls-Royce_Dawn_roll_royce_phantom_car_camping.jpg?ex=651b9420&is=651a42a0&hm=b3a3a5176add9333deeb69607200bbf75a5dcb2d5c009f31af98c3c2acd55580&" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>ณ บริษัทแห่งหนึ่ง</b></h4> 
+        <p> เบอร์โทรติดต่อ : 0658495802</p>
+        <p> บริษัทสีสิบทับสี่</p>
+        
+    </div>
+    </div>
+
+{% endblock Content %}

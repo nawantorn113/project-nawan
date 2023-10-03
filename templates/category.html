@@ -1,34 +1,40 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+<!---->
+{% block title %}
+    รายชื่อพนักงาน
+{% endblock title %}
+<!---->
+{% block Content %}
+{{message}}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ชื่อ</th>
+        <th scope="col">นามสกุล</th>
+        <th scope="col">เพศ</th>
+        <th scope="col">อายุ</th>
+        <th scope="col">ระดับการศึกษา</th>
+        <th scope="col">แผนกงานที่สังกัด</th>
+        
+      </tr>
+      
+      {% for i in departments %}
+      <tr>
+        <th scope="row">{{ i.name }}</th>
+        <td>{{ i.l_name }}</td>
+        <td>{{ i.gender }}</td>
+        <td>{{ i.age }}</td>
+        <td>{{ i.qualification }}</td>
+        <td>{{ i.department }}</td>
 
-{% block content %}
-<div history="card">
-    <h5 history="card-header">Borderless Table</h5>
-    <div history="table-responsive text-nowrap">
-      <table history="table table-borderless">
-        <thead>
-          <tr>
-            <th>ชื่อ</th>
-            <th>นามสกุล</th>
-            <th>เพศ(ชาย / หญิง)</th>
-            <th>อายุ</th>
-            <th>ระดับการศึกษา(ปวช. / ปวส. / ปริญญาตรี / สูงกว่าปริญญาตรี)</th>
-            <th>แผนกงานที่สังกัด</th>
-          </tr>
-        </thead>
-        <tbody>
-        {% for item in nawan %}
-          <tr>
-            <td>{{item.name}}</td>
-            <td>{{item.last name}}</td>
-            <td>{{item. gender}}</td>
-            <td>{{item.year}}</td>
-            <td>{{item.education leve}}</td>
-            <td>{{item.department of work under}}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </div>
 
-{% endblock content %}
+        
+      </tr>
+      {% endfor %}
+
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+{% endblock Content %}

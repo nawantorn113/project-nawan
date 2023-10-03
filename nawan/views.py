@@ -1,15 +1,23 @@
 from django.shortcuts import render
 from . import models
+
 # Create your views here.
 
-def index(request):
+
+def Index(request):
     context = {}
-    context['nawans'] = models. history.objects.all()
-    return render(request, 'index.html', context)
+    i = models.Employee.objects.all().order_by("name")
+
+    context["employees"] = i
+    return render(request, "index.html", context)
 
 
-def history(request, id):
+def Department(request, id):
     context = {}
-    context['nawans'] = models. history.objects.filter(personal_information=id)
+    i = models.Employee.objects.filter(department=id)
+    context["departments"] = i
+    
+    return render(request, "department.html", context,)
 
-    return render(request, ' history.html', context)
+def About(request):
+    return render(request, "about.html",)
